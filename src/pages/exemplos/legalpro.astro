@@ -1,0 +1,487 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="LegalPro - Escritório de Advocacia Especializado">
+  <main class="min-h-screen bg-gray-900 text-white">
+    
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm border-b border-gray-800 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/>
+              </svg>
+            </div>
+            <span class="text-xl font-bold">LegalPro</span>
+          </div>
+          <nav class="hidden md:flex space-x-8">
+            <a href="#servicos" class="text-gray-300 hover:text-white transition-colors">Serviços</a>
+            <a href="#equipe" class="text-gray-300 hover:text-white transition-colors">Equipe</a>
+            <a href="#sobre" class="text-gray-300 hover:text-white transition-colors">Sobre</a>
+            <a href="#contato" class="text-gray-300 hover:text-white transition-colors">Contato</a>
+          </nav>
+          <div class="flex items-center space-x-4">
+            <button class="px-4 py-2 bg-gradient-to-r from-green-500 to-teal-500 text-white rounded-lg hover:from-green-600 hover:to-teal-600 transition-all duration-300">
+              Consulta Gratuita
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-16 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-green-900/20 to-teal-900/20"></div>
+      <div class="absolute inset-0">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-green-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      </div>
+      
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-8">
+            <div class="space-y-4">
+              <span class="inline-block px-4 py-2 bg-green-500/20 text-green-400 rounded-full text-sm font-medium">
+                ⚖️ Advocacia Especializada
+              </span>
+              <h1 class="text-5xl lg:text-6xl font-bold leading-tight">
+                Defenda seus
+                <span class="bg-gradient-to-r from-green-400 to-teal-400 bg-clip-text text-transparent">
+                  Direitos
+                </span>
+                <br>com Excelência
+              </h1>
+              <p class="text-xl text-gray-300 leading-relaxed">
+                Mais de 20 anos de experiência em direito empresarial, trabalhista 
+                e civil. Resultados comprovados e atendimento personalizado.
+              </p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button class="px-8 py-4 bg-gradient-to-r from-green-500 to-teal-500 text-white font-semibold rounded-xl hover:from-green-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-500/25">
+                Consulta Gratuita
+              </button>
+              <button class="px-8 py-4 border border-gray-600 text-gray-300 font-semibold rounded-xl hover:border-gray-500 hover:text-white transition-all duration-300">
+                Nossos Casos
+              </button>
+            </div>
+
+            <div class="flex items-center space-x-8 pt-8">
+              <div class="text-center">
+                <div class="text-2xl font-bold text-green-400">500+</div>
+                <div class="text-sm text-gray-400">Casos Vencidos</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-bold text-teal-400">95%</div>
+                <div class="text-sm text-gray-400">Taxa de Sucesso</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-bold text-blue-400">20+</div>
+                <div class="text-sm text-gray-400">Anos de Experiência</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="relative z-10 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
+              <div class="space-y-6">
+                <div class="text-center mb-6">
+                  <h3 class="text-2xl font-bold mb-2">Consulta Gratuita</h3>
+                  <p class="text-gray-400">Avaliação inicial sem compromisso</p>
+                </div>
+                
+                <form class="space-y-4">
+                  <div>
+                    <input type="text" placeholder="Nome completo" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-green-500 focus:outline-none transition-colors">
+                  </div>
+                  <div>
+                    <input type="email" placeholder="E-mail" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-green-500 focus:outline-none transition-colors">
+                  </div>
+                  <div>
+                    <input type="tel" placeholder="Telefone" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-green-500 focus:outline-none transition-colors">
+                  </div>
+                  <div>
+                    <select class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:border-green-500 focus:outline-none transition-colors">
+                      <option value="">Área de interesse</option>
+                      <option value="empresarial">Direito Empresarial</option>
+                      <option value="trabalhista">Direito Trabalhista</option>
+                      <option value="civil">Direito Civil</option>
+                      <option value="criminal">Direito Criminal</option>
+                    </select>
+                  </div>
+                  <div>
+                    <textarea placeholder="Descreva brevemente seu caso" rows="3" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-green-500 focus:outline-none transition-colors resize-none"></textarea>
+                  </div>
+                  <button type="submit" class="w-full py-3 bg-gradient-to-r from-green-500 to-teal-500 text-white font-semibold rounded-lg hover:from-green-600 hover:to-teal-600 transition-all duration-300">
+                    Solicitar Consulta
+                  </button>
+                </form>
+                
+                <div class="text-center text-sm text-gray-400">
+                  <p>✓ Resposta em até 2 horas</p>
+                  <p>✓ Atendimento personalizado</p>
+                  <p>✓ Sem compromisso</p>
+                </div>
+              </div>
+            </div>
+            <div class="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-green-500 to-teal-500 rounded-full blur-xl opacity-50"></div>
+            <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-r from-teal-500 to-blue-500 rounded-full blur-xl opacity-30"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-20 bg-gray-800/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Áreas de Atuação</h2>
+          <p class="text-xl text-gray-400">Especialistas em diversas áreas do direito</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Serviço 1 -->
+          <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-green-500 transition-all duration-300 group">
+            <div class="w-16 h-16 bg-gradient-to-r from-green-500/20 to-teal-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-8 h-8 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Direito Empresarial</h3>
+            <p class="text-gray-400 mb-6">
+              Consultoria jurídica completa para empresas, contratos, fusões e aquisições.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li>• Constituição de empresas</li>
+              <li>• Contratos comerciais</li>
+              <li>• Compliance empresarial</li>
+              <li>• Recuperação judicial</li>
+            </ul>
+          </div>
+
+          <!-- Serviço 2 -->
+          <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-teal-500 transition-all duration-300 group">
+            <div class="w-16 h-16 bg-gradient-to-r from-teal-500/20 to-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-8 h-8 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Direito Trabalhista</h3>
+            <p class="text-gray-400 mb-6">
+              Defesa de direitos trabalhistas para empregados e empregadores.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li>• Rescisões contratuais</li>
+              <li>• Horas extras</li>
+              <li>• Assédio moral</li>
+              <li>• Acidentes de trabalho</li>
+            </ul>
+          </div>
+
+          <!-- Serviço 3 -->
+          <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-blue-500 transition-all duration-300 group">
+            <div class="w-16 h-16 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-8 h-8 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Direito Civil</h3>
+            <p class="text-gray-400 mb-6">
+              Soluções jurídicas para questões pessoais e patrimoniais.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li>• Direito imobiliário</li>
+              <li>• Direito de família</li>
+              <li>• Sucessões e heranças</li>
+              <li>• Responsabilidade civil</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipe -->
+    <section id="equipe" class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Nossa Equipe</h2>
+          <p class="text-xl text-gray-400">Profissionais experientes e especializados</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Advogado 1 -->
+          <div class="text-center group">
+            <div class="relative mb-6">
+              <div class="w-32 h-32 bg-gradient-to-br from-green-500/20 to-teal-500/20 rounded-full mx-auto flex items-center justify-center border border-green-500/30 group-hover:scale-105 transition-transform duration-300">
+                <div class="text-4xl">👨‍💼</div>
+              </div>
+              <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
+                <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium">
+                  Sócio Fundador
+                </span>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Dr. Carlos Silva</h3>
+            <p class="text-green-400 mb-3">Direito Empresarial</p>
+            <p class="text-gray-400 text-sm">
+              25 anos de experiência em direito empresarial. Especialista em fusões e aquisições.
+            </p>
+          </div>
+
+          <!-- Advogado 2 -->
+          <div class="text-center group">
+            <div class="relative mb-6">
+              <div class="w-32 h-32 bg-gradient-to-br from-teal-500/20 to-blue-500/20 rounded-full mx-auto flex items-center justify-center border border-teal-500/30 group-hover:scale-105 transition-transform duration-300">
+                <div class="text-4xl">👩‍💼</div>
+              </div>
+              <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
+                <span class="bg-teal-500 text-white px-3 py-1 rounded-full text-xs font-medium">
+                  Sócia
+                </span>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Dra. Ana Santos</h3>
+            <p class="text-teal-400 mb-3">Direito Trabalhista</p>
+            <p class="text-gray-400 text-sm">
+              20 anos defendendo direitos trabalhistas. Especialista em processos complexos.
+            </p>
+          </div>
+
+          <!-- Advogado 3 -->
+          <div class="text-center group">
+            <div class="relative mb-6">
+              <div class="w-32 h-32 bg-gradient-to-br from-blue-500/20 to-indigo-500/20 rounded-full mx-auto flex items-center justify-center border border-blue-500/30 group-hover:scale-105 transition-transform duration-300">
+                <div class="text-4xl">👨‍💼</div>
+              </div>
+              <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">
+                  Advogado Senior
+                </span>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Dr. Roberto Lima</h3>
+            <p class="text-blue-400 mb-3">Direito Civil</p>
+            <p class="text-gray-400 text-sm">
+              15 anos em direito civil e família. Especialista em mediação e arbitragem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-20 bg-gray-800/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">O que Nossos Clientes Dizem</h2>
+          <p class="text-xl text-gray-400">Resultados que falam por si só</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Depoimento 1 -->
+          <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700">
+            <div class="flex items-center mb-4">
+              <div class="flex text-yellow-400">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+              </div>
+            </div>
+            <p class="text-gray-300 mb-4">
+              "Excelente atendimento e resultados excepcionais. O Dr. Carlos resolveu meu caso empresarial de forma rápida e eficiente."
+            </p>
+            <div class="flex items-center">
+              <div class="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
+                <span class="text-green-400 font-semibold">M</span>
+              </div>
+              <div>
+                <p class="font-semibold">Maria Oliveira</p>
+                <p class="text-sm text-gray-400">CEO, TechCorp</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Depoimento 2 -->
+          <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700">
+            <div class="flex items-center mb-4">
+              <div class="flex text-yellow-400">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+              </div>
+            </div>
+            <p class="text-gray-300 mb-4">
+              "A Dra. Ana foi fundamental na resolução do meu processo trabalhista. Profissionalismo e dedicação exemplares."
+            </p>
+            <div class="flex items-center">
+              <div class="w-10 h-10 bg-teal-500/20 rounded-full flex items-center justify-center mr-3">
+                <span class="text-teal-400 font-semibold">J</span>
+              </div>
+              <div>
+                <p class="font-semibold">João Pereira</p>
+                <p class="text-sm text-gray-400">Engenheiro</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Depoimento 3 -->
+          <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700">
+            <div class="flex items-center mb-4">
+              <div class="flex text-yellow-400">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+              </div>
+            </div>
+            <p class="text-gray-300 mb-4">
+              "Processo de divórcio resolvido com total transparência e agilidade. Recomendo o Dr. Roberto para questões familiares."
+            </p>
+            <div class="flex items-center">
+              <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center mr-3">
+                <span class="text-blue-400 font-semibold">L</span>
+              </div>
+              <div>
+                <p class="font-semibold">Lucia Costa</p>
+                <p class="text-sm text-gray-400">Arquiteta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-green-900/50 to-teal-900/50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold mb-6">
+          Precisa de Assessoria Jurídica?
+        </h2>
+        <p class="text-xl text-gray-300 mb-8">
+          Agende uma consulta gratuita e descubra como podemos defender seus direitos com excelência.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="px-8 py-4 bg-gradient-to-r from-green-500 to-teal-500 text-white font-semibold rounded-xl hover:from-green-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-500/25">
+            Consulta Gratuita
+          </button>
+          <button class="px-8 py-4 border border-gray-600 text-gray-300 font-semibold rounded-xl hover:border-gray-500 hover:text-white transition-all duration-300">
+            (11) 9999-9999
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="space-y-4">
+            <div class="flex items-center space-x-2">
+              <div class="w-8 h-8 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                  <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/>
+                </svg>
+              </div>
+              <span class="text-xl font-bold">LegalPro</span>
+            </div>
+            <p class="text-gray-400">
+              Escritório de advocacia especializado em soluções jurídicas eficientes.
+            </p>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold mb-4">Serviços</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white transition-colors">Direito Empresarial</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Direito Trabalhista</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Direito Civil</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Direito Criminal</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold mb-4">Contato</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>(11) 9999-9999</li>
+              <li>contato@legalpro.com.br</li>
+              <li>Av. Paulista, 1000</li>
+              <li>São Paulo - SP</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold mb-4">Horário</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>Segunda a Sexta</li>
+              <li>8h às 18h</li>
+              <li>Sábado</li>
+              <li>8h às 12h</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+          <p>&copy; 2024 LegalPro. Todos os direitos reservados. OAB/SP 123.456</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</Layout>
+
+<style>
+  @reference "tailwindcss";
+  
+  .animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .5;
+    }
+  }
+</style>

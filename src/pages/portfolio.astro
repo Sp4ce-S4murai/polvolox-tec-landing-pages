@@ -1,0 +1,284 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Portfólio - A Forja de Páginas">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800">
+    <!-- Animated background -->
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-1/4 left-1/4 w-32 h-32 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-32 h-32 bg-violet-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-2s"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+        <span class="block">Nosso</span>
+        <span class="block bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
+          Portfólio
+        </span>
+      </h1>
+      <p class="text-lg sm:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+        Conheça alguns dos projetos que desenvolvemos. Cada landing page foi criada com foco em conversão e performance.
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="py-20 bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Filter Tabs -->
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <button class="filter-btn active" data-filter="all">
+          Todos os Projetos
+        </button>
+        <button class="filter-btn" data-filter="ecommerce">
+          E-commerce
+        </button>
+        <button class="filter-btn" data-filter="saas">
+          SaaS
+        </button>
+        <button class="filter-btn" data-filter="servicos">
+          Serviços
+        </button>
+        <button class="filter-btn" data-filter="educacao">
+          Educação
+        </button>
+      </div>
+
+      <!-- Portfolio Items -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8" id="portfolio-grid">
+        
+        <!-- Project 1 - E-commerce -->
+        <div class="portfolio-item group" data-category="ecommerce">
+          <div class="relative overflow-hidden rounded-xl bg-gray-800 border border-gray-700 hover:border-blue-500 transition-all duration-300 transform hover:scale-105">
+            <div class="aspect-video bg-gradient-to-br from-blue-500 to-violet-500 p-8 flex items-center justify-center">
+              <div class="text-center text-white">
+                <div class="w-16 h-16 bg-white/20 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold">TechStore Pro</h3>
+                <p class="text-sm opacity-80">E-commerce de Tecnologia</p>
+              </div>
+            </div>
+            <div class="p-6">
+              <h4 class="text-lg font-semibold text-white mb-2">TechStore Pro</h4>
+              <p class="text-gray-400 text-sm mb-4">Landing page para loja de produtos eletrônicos com foco em conversão e experiência do usuário.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">E-commerce</span>
+                <span class="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">+180% Conversão</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-500 text-sm">Entregue em 48h</span>
+                <a href="/exemplos/techstore" class="text-blue-400 hover:text-blue-300 transition-colors">
+                  Ver Exemplo →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 - SaaS -->
+        <div class="portfolio-item group" data-category="saas">
+          <div class="relative overflow-hidden rounded-xl bg-gray-800 border border-gray-700 hover:border-violet-500 transition-all duration-300 transform hover:scale-105">
+            <div class="aspect-video bg-gradient-to-br from-violet-500 to-indigo-500 p-8 flex items-center justify-center">
+              <div class="text-center text-white">
+                <div class="w-16 h-16 bg-white/20 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold">CloudFlow</h3>
+                <p class="text-sm opacity-80">Plataforma SaaS</p>
+              </div>
+            </div>
+            <div class="p-6">
+              <h4 class="text-lg font-semibold text-white mb-2">CloudFlow</h4>
+              <p class="text-gray-400 text-sm mb-4">Landing page para plataforma de automação de workflows com design moderno e interativo.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-violet-500/20 text-violet-400 text-xs rounded">SaaS</span>
+                <span class="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">+250% Leads</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-500 text-sm">Entregue em 72h</span>
+                <a href="/exemplos/cloudflow" class="text-violet-400 hover:text-violet-300 transition-colors">
+                  Ver Exemplo →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 - Serviços -->
+        <div class="portfolio-item group" data-category="servicos">
+          <div class="relative overflow-hidden rounded-xl bg-gray-800 border border-gray-700 hover:border-green-500 transition-all duration-300 transform hover:scale-105">
+            <div class="aspect-video bg-gradient-to-br from-green-500 to-teal-500 p-8 flex items-center justify-center">
+              <div class="text-center text-white">
+                <div class="w-16 h-16 bg-white/20 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                    <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold">LegalPro</h3>
+                <p class="text-sm opacity-80">Escritório de Advocacia</p>
+              </div>
+            </div>
+            <div class="p-6">
+              <h4 class="text-lg font-semibold text-white mb-2">LegalPro</h4>
+              <p class="text-gray-400 text-sm mb-4">Landing page profissional para escritório de advocacia com foco em credibilidade e conversão.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">Serviços</span>
+                <span class="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">+300% Contatos</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-500 text-sm">Entregue em 60h</span>
+                <a href="/exemplos/legalpro" class="text-green-400 hover:text-green-300 transition-colors">
+                  Ver Exemplo →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 - Educação -->
+        <div class="portfolio-item group" data-category="educacao">
+          <div class="relative overflow-hidden rounded-xl bg-gray-800 border border-gray-700 hover:border-orange-500 transition-all duration-300 transform hover:scale-105">
+            <div class="aspect-video bg-gradient-to-br from-orange-500 to-red-500 p-8 flex items-center justify-center">
+              <div class="text-center text-white">
+                <div class="w-16 h-16 bg-white/20 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold">EduMaster</h3>
+                <p class="text-sm opacity-80">Plataforma de Cursos</p>
+              </div>
+            </div>
+            <div class="p-6">
+              <h4 class="text-lg font-semibold text-white mb-2">EduMaster</h4>
+              <p class="text-gray-400 text-sm mb-4">Landing page para plataforma de cursos online com design educativo e alta conversão.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-orange-500/20 text-orange-400 text-xs rounded">Educação</span>
+                <span class="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">+400% Inscrições</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-500 text-sm">Entregue em 55h</span>
+                <a href="/exemplos/edumaster" class="text-orange-400 hover:text-orange-300 transition-colors">
+                  Ver Exemplo →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Load More Button -->
+      <div class="text-center mt-12">
+        <button class="bg-gradient-to-r from-blue-500 to-violet-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-violet-600 transition-all duration-300 transform hover:scale-105">
+          Carregar Mais Projetos
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-r from-blue-600 to-violet-600">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+        Pronto para ter sua Landing Page?
+      </h2>
+      <p class="text-xl text-blue-100 mb-8">
+        Junte-se aos nossos clientes satisfeitos e transforme visitantes em clientes.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href="https://wa.me/5554981050464?text=Olá! Vi o portfólio de vocês e gostaria de criar minha landing page." 
+          target="_blank"
+          class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+        >
+          Começar Meu Projeto
+        </a>
+        <a 
+          href="/#planos" 
+          class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300"
+        >
+          Ver Planos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<script>
+  // Portfolio filtering functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const filter = this.getAttribute('data-filter');
+        
+        // Update active button
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Filter items
+        portfolioItems.forEach(item => {
+          const category = item.getAttribute('data-category');
+          
+          if (filter === 'all' || category === filter) {
+            item.style.display = 'block';
+            item.style.animation = 'fadeIn 0.5s ease-in-out';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>
+
+<style>
+  @reference "tailwindcss";
+  
+  .filter-btn {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+    @apply bg-gray-800 text-gray-300 border border-gray-700;
+    @apply hover:bg-gray-700 hover:text-white hover:border-gray-600;
+  }
+  
+  .filter-btn.active {
+    @apply bg-gradient-to-r from-blue-500 to-violet-500 text-white border-transparent;
+  }
+  
+  .portfolio-item {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animation-delay-2s {
+    animation-delay: 2s;
+  }
+</style>

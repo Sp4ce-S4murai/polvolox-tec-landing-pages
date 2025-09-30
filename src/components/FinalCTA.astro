@@ -1,0 +1,201 @@
+---
+---
+
+<section id="contato" class="py-20 bg-gradient-to-br from-gray-900 via-blue-900/20 to-violet-900/20 relative overflow-hidden">
+  <!-- Background elements -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse animation-delay-2000"></div>
+  </div>
+  
+  <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <!-- Main CTA Content -->
+    <div class="mb-16">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+        Pronto para transformar sua 
+        <span class="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
+          visão em realidade?
+        </span>
+      </h1>
+      
+      <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+        Chega de projetos caros e demorados. Lance sua landing page de alta performance esta semana.
+      </p>
+      
+      <!-- Primary CTA Button -->
+      <a 
+        href="https://wa.me/5554981050464?text=Olá! Estou pronto para começar meu projeto com A Forja de Páginas. Vamos conversar?" 
+        target="_blank"
+        class="inline-flex items-center bg-gradient-to-r from-blue-500 to-violet-500 text-white px-10 py-5 rounded-xl text-xl font-bold hover:from-blue-600 hover:to-violet-600 transition-all duration-200 transform hover:scale-105 shadow-2xl hover:shadow-blue-500/25 mb-8"
+      >
+        Falar no WhatsApp Agora
+        <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+        </svg>
+      </a>
+      
+      <!-- Trust indicators -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-gray-400 text-sm">
+        <div class="flex items-center">
+          <svg class="w-5 h-5 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Entrega garantida em 72h
+        </div>
+        <div class="flex items-center">
+          <svg class="w-5 h-5 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Código-fonte 100% seu
+        </div>
+        <div class="flex items-center">
+          <svg class="w-5 h-5 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Garantia de 7 dias
+        </div>
+      </div>
+    </div>
+    
+    <!-- Contact Form -->
+    <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 max-w-2xl mx-auto">
+      <h3 class="text-2xl font-bold text-white mb-6">Começar Meu Projeto</h3>
+      
+      <form id="whatsappForm" class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Nome Completo</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              required
+              class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              placeholder="Seu nome completo"
+            >
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-300 mb-2">E-mail</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required
+              class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              placeholder="seu@email.com"
+            >
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="whatsapp" class="block text-sm font-medium text-gray-300 mb-2">WhatsApp</label>
+            <input 
+              type="tel" 
+              id="whatsapp" 
+              name="whatsapp"
+              required
+              class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              placeholder="(00) 00000-0000"
+            >
+          </div>
+          <div>
+            <label for="plan" class="block text-sm font-medium text-gray-300 mb-2">Plano de Interesse</label>
+            <select 
+              id="plan" 
+              name="plan"
+              required
+              class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            >
+              <option value="">Selecione um plano</option>
+              <option value="essencial">Página Essencial - R$ 199,90</option>
+              <option value="avancada">Página Avançada - R$ 299,90</option>
+              <option value="premium">Página Premium - R$ 599,90</option>
+            </select>
+          </div>
+        </div>
+        
+        <div>
+          <label for="project" class="block text-sm font-medium text-gray-300 mb-2">Descreva seu Projeto</label>
+          <textarea 
+            id="project" 
+            name="project" 
+            rows="4"
+            required
+            class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+            placeholder="Conte-nos sobre seu negócio, objetivos e o que você espera da sua landing page..."
+          ></textarea>
+        </div>
+        
+        <button 
+          type="submit"
+          class="w-full bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl"
+        >
+          Enviar via WhatsApp
+        </button>
+        
+        <p class="text-xs text-gray-500 text-center">
+          Responderemos em até 2 horas úteis. Seus dados estão seguros conosco.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+  @reference "tailwindcss";
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('whatsappForm');
+    
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Coleta os dados do formulário
+      const formData = new FormData(form);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const whatsapp = formData.get('whatsapp');
+      const plan = formData.get('plan');
+      const project = formData.get('project');
+      
+      // Mapeia os planos para texto mais legível
+      const planNames = {
+        'essencial': 'Página Essencial (R$ 1.497)',
+        'avancada': 'Página Avançada (R$ 2.497)',
+        'premium': 'Página Premium (R$ 3.997)'
+      };
+      
+      // Monta a mensagem para WhatsApp
+      const message = `🚀 *Nova Solicitação - A Forja de Páginas*
+
+👤 *Nome:* ${name}
+📧 *E-mail:* ${email}
+📱 *WhatsApp:* ${whatsapp}
+
+💼 *Plano de Interesse:* ${planNames[plan] || plan}
+
+📝 *Descrição do Projeto:*
+${project}
+
+---
+Enviado através da landing page A Forja de Páginas`;
+
+      // Codifica a mensagem para URL
+      const encodedMessage = encodeURIComponent(message);
+      
+      // Número do WhatsApp (54)981050464
+      const whatsappNumber = '5554981050464';
+      
+      // Abre o WhatsApp com a mensagem
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+      window.open(whatsappURL, '_blank');
+    });
+  });
+</script>

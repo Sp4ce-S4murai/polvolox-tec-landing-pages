@@ -1,0 +1,431 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="CloudFlow - Automação de Workflows Inteligente">
+  <main class="min-h-screen bg-gray-900 text-white">
+    
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm border-b border-gray-800 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-gradient-to-r from-violet-500 to-indigo-500 rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+              </svg>
+            </div>
+            <span class="text-xl font-bold">CloudFlow</span>
+          </div>
+          <nav class="hidden md:flex space-x-8">
+            <a href="#recursos" class="text-gray-300 hover:text-white transition-colors">Recursos</a>
+            <a href="#precos" class="text-gray-300 hover:text-white transition-colors">Preços</a>
+            <a href="#sobre" class="text-gray-300 hover:text-white transition-colors">Sobre</a>
+            <a href="#contato" class="text-gray-300 hover:text-white transition-colors">Contato</a>
+          </nav>
+          <div class="flex items-center space-x-4">
+            <button class="text-gray-300 hover:text-white transition-colors">Login</button>
+            <button class="px-4 py-2 bg-gradient-to-r from-violet-500 to-indigo-500 text-white rounded-lg hover:from-violet-600 hover:to-indigo-600 transition-all duration-300">
+              Teste Grátis
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-16 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-violet-900/20 to-indigo-900/20"></div>
+      <div class="absolute inset-0">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-violet-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      </div>
+      
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-8">
+            <div class="space-y-4">
+              <span class="inline-block px-4 py-2 bg-violet-500/20 text-violet-400 rounded-full text-sm font-medium">
+                ⚡ Automação Inteligente
+              </span>
+              <h1 class="text-5xl lg:text-6xl font-bold leading-tight">
+                Automatize seus
+                <span class="bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-transparent">
+                  Workflows
+                </span>
+                <br>em Minutos
+              </h1>
+              <p class="text-xl text-gray-300 leading-relaxed">
+                Conecte suas ferramentas favoritas, automatize tarefas repetitivas 
+                e aumente a produtividade da sua equipe em até 300%.
+              </p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button class="px-8 py-4 bg-gradient-to-r from-violet-500 to-indigo-500 text-white font-semibold rounded-xl hover:from-violet-600 hover:to-indigo-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-violet-500/25">
+                Começar Grátis
+              </button>
+              <button class="px-8 py-4 border border-gray-600 text-gray-300 font-semibold rounded-xl hover:border-gray-500 hover:text-white transition-all duration-300">
+                Ver Demo
+              </button>
+            </div>
+
+            <div class="flex items-center space-x-8 pt-8">
+              <div class="text-center">
+                <div class="text-2xl font-bold text-violet-400">500+</div>
+                <div class="text-sm text-gray-400">Integrações</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-bold text-indigo-400">99.9%</div>
+                <div class="text-sm text-gray-400">Uptime</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-bold text-green-400">10M+</div>
+                <div class="text-sm text-gray-400">Automações</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="relative z-10 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
+              <div class="space-y-6">
+                <!-- Workflow Visual -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                      </svg>
+                    </div>
+                    <span class="text-sm font-medium">Gmail</span>
+                  </div>
+                  <div class="flex-1 mx-4 h-px bg-gradient-to-r from-blue-500 to-violet-500"></div>
+                  <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-violet-500/20 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-violet-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                      </svg>
+                    </div>
+                    <span class="text-sm font-medium">Slack</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                      </svg>
+                    </div>
+                    <span class="text-sm font-medium">Stripe</span>
+                  </div>
+                  <div class="flex-1 mx-4 h-px bg-gradient-to-r from-green-500 to-orange-500"></div>
+                  <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                      </svg>
+                    </div>
+                    <span class="text-sm font-medium">Notion</span>
+                  </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-violet-500/10 to-indigo-500/10 rounded-lg p-4 border border-violet-500/20">
+                  <div class="flex items-center space-x-2 mb-2">
+                    <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                    <span class="text-sm font-medium text-green-400">Automação Ativa</span>
+                  </div>
+                  <p class="text-sm text-gray-300">
+                    Quando um pagamento é recebido no Stripe, criar tarefa no Notion e notificar no Slack
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-violet-500 to-indigo-500 rounded-full blur-xl opacity-50"></div>
+            <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full blur-xl opacity-30"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recursos -->
+    <section id="recursos" class="py-20 bg-gray-800/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Recursos Poderosos</h2>
+          <p class="text-xl text-gray-400">Tudo que você precisa para automatizar seus processos</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Recurso 1 -->
+          <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-violet-500 transition-all duration-300 group">
+            <div class="w-16 h-16 bg-gradient-to-r from-violet-500/20 to-indigo-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-8 h-8 text-violet-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Automação Instantânea</h3>
+            <p class="text-gray-400">
+              Configure automações complexas em minutos com nossa interface visual intuitiva.
+            </p>
+          </div>
+
+          <!-- Recurso 2 -->
+          <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-indigo-500 transition-all duration-300 group">
+            <div class="w-16 h-16 bg-gradient-to-r from-indigo-500/20 to-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-8 h-8 text-indigo-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">500+ Integrações</h3>
+            <p class="text-gray-400">
+              Conecte todas as suas ferramentas favoritas em um só lugar.
+            </p>
+          </div>
+
+          <!-- Recurso 3 -->
+          <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-green-500 transition-all duration-300 group">
+            <div class="w-16 h-16 bg-gradient-to-r from-green-500/20 to-teal-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-8 h-8 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">99.9% Uptime</h3>
+            <p class="text-gray-400">
+              Confiabilidade garantida com infraestrutura de classe mundial.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preços -->
+    <section id="precos" class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Planos Flexíveis</h2>
+          <p class="text-xl text-gray-400">Escolha o plano ideal para sua empresa</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Plano Starter -->
+          <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-gray-600 transition-all duration-300">
+            <div class="text-center mb-8">
+              <h3 class="text-2xl font-bold mb-2">Starter</h3>
+              <div class="text-4xl font-bold mb-2">
+                <span class="text-gray-400">R$</span>
+                <span class="text-white">29</span>
+                <span class="text-lg text-gray-400">/mês</span>
+              </div>
+              <p class="text-gray-400">Para pequenas equipes</p>
+            </div>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center space-x-3">
+                <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-300">1.000 automações/mês</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-300">50+ integrações</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-300">Suporte por email</span>
+              </li>
+            </ul>
+            <button class="w-full py-3 border border-gray-600 text-gray-300 font-semibold rounded-xl hover:border-gray-500 hover:text-white transition-all duration-300">
+              Começar Grátis
+            </button>
+          </div>
+
+          <!-- Plano Pro (Destacado) -->
+          <div class="bg-gradient-to-br from-violet-900/50 to-indigo-900/50 rounded-2xl p-8 border border-violet-500 relative transform scale-105">
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <span class="bg-gradient-to-r from-violet-500 to-indigo-500 text-white px-4 py-1 rounded-full text-sm font-medium">
+                Mais Popular
+              </span>
+            </div>
+            <div class="text-center mb-8">
+              <h3 class="text-2xl font-bold mb-2">Pro</h3>
+              <div class="text-4xl font-bold mb-2">
+                <span class="text-gray-400">R$</span>
+                <span class="text-white">99</span>
+                <span class="text-lg text-gray-400">/mês</span>
+              </div>
+              <p class="text-gray-400">Para empresas em crescimento</p>
+            </div>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center space-x-3">
+                <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-300">10.000 automações/mês</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-300">500+ integrações</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-300">Suporte prioritário</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-300">Analytics avançado</span>
+              </li>
+            </ul>
+            <button class="w-full py-3 bg-gradient-to-r from-violet-500 to-indigo-500 text-white font-semibold rounded-xl hover:from-violet-600 hover:to-indigo-600 transition-all duration-300">
+              Começar Teste
+            </button>
+          </div>
+
+          <!-- Plano Enterprise -->
+          <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-gray-600 transition-all duration-300">
+            <div class="text-center mb-8">
+              <h3 class="text-2xl font-bold mb-2">Enterprise</h3>
+              <div class="text-4xl font-bold mb-2">
+                <span class="text-white">Personalizado</span>
+              </div>
+              <p class="text-gray-400">Para grandes empresas</p>
+            </div>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center space-x-3">
+                <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-300">Automações ilimitadas</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-300">Todas as integrações</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-300">Suporte dedicado</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-300">SLA garantido</span>
+              </li>
+            </ul>
+            <button class="w-full py-3 border border-gray-600 text-gray-300 font-semibold rounded-xl hover:border-gray-500 hover:text-white transition-all duration-300">
+              Falar com Vendas
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-violet-900/50 to-indigo-900/50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold mb-6">
+          Pronto para Automatizar seu Negócio?
+        </h2>
+        <p class="text-xl text-gray-300 mb-8">
+          Junte-se a mais de 50.000 empresas que já transformaram seus processos com CloudFlow.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="px-8 py-4 bg-gradient-to-r from-violet-500 to-indigo-500 text-white font-semibold rounded-xl hover:from-violet-600 hover:to-indigo-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-violet-500/25">
+            Começar Teste Grátis
+          </button>
+          <button class="px-8 py-4 border border-gray-600 text-gray-300 font-semibold rounded-xl hover:border-gray-500 hover:text-white transition-all duration-300">
+            Agendar Demo
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="space-y-4">
+            <div class="flex items-center space-x-2">
+              <div class="w-8 h-8 bg-gradient-to-r from-violet-500 to-indigo-500 rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                </svg>
+              </div>
+              <span class="text-xl font-bold">CloudFlow</span>
+            </div>
+            <p class="text-gray-400">
+              Automatize seus workflows e aumente a produtividade da sua equipe.
+            </p>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold mb-4">Produto</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white transition-colors">Recursos</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Integrações</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Preços</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">API</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold mb-4">Suporte</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white transition-colors">Central de Ajuda</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Documentação</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Status</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Contato</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold mb-4">Empresa</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white transition-colors">Sobre</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Carreiras</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Imprensa</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+          <p>&copy; 2024 CloudFlow. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</Layout>
+
+<style>
+  @reference "tailwindcss";
+  
+  .animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .5;
+    }
+  }
+</style>
