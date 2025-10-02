@@ -49,6 +49,12 @@ import Footer from '../components/Footer.astro';
         <button class="filter-btn" data-filter="educacao">
           Educação
         </button>
+        <button class="filter-btn" data-filter="saude">
+          Saúde
+        </button>
+        <button class="filter-btn" data-filter="delivery">
+          Delivery
+        </button>
       </div>
 
       <!-- Portfolio Items -->
@@ -172,6 +178,66 @@ import Footer from '../components/Footer.astro';
               <div class="flex justify-between items-center">
                 <span class="text-gray-500 text-sm">Entregue em 55h</span>
                 <a href="/exemplos/edumaster" class="text-orange-400 hover:text-orange-300 transition-colors">
+                  Ver Exemplo →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 - Saúde -->
+        <div class="portfolio-item group" data-category="saude">
+          <div class="relative overflow-hidden rounded-xl bg-white border border-gray-200 hover:border-blue-500 transition-all duration-300 transform hover:scale-105">
+            <div class="aspect-video bg-gradient-to-br from-blue-50 to-teal-50 p-8 flex items-center justify-center">
+              <div class="text-center text-gray-900">
+                <div class="w-16 h-16 bg-blue-600/10 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                  <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 3a7 7 0 100 14A7 7 0 0010 3zM9 7a1 1 0 012 0v2h2a1 1 0 110 2h-2v2a1 1 0 11-2 0v-2H7a1 1 0 110-2h2V7z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold">HealthCare Plus</h3>
+                <p class="text-sm opacity-80">Clínica e Telemedicina</p>
+              </div>
+            </div>
+            <div class="p-6">
+              <h4 class="text-lg font-semibold text-gray-900 mb-2">HealthCare Plus</h4>
+              <p class="text-gray-700 text-sm mb-4">Página clara com hero dividido e formulário de agendamento. Ordem focada em equipe e confiança.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded">Saúde</span>
+                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">+220% Contatos</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-500 text-sm">Entregue em 72h</span>
+                <a href="/exemplos/healthcare" class="text-blue-600 hover:text-blue-500 transition-colors">
+                  Ver Exemplo →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 - Delivery -->
+        <div class="portfolio-item group" data-category="delivery">
+          <div class="relative overflow-hidden rounded-xl bg-gray-800 border border-gray-700 hover:border-orange-500 transition-all duration-300 transform hover:scale-105">
+            <div class="aspect-video bg-gradient-to-br from-orange-900 via-red-900 to-rose-900 p-8 flex items-center justify-center">
+              <div class="text-center text-white">
+                <div class="w-16 h-16 bg-white/20 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                  <span class="text-2xl">🍔</span>
+                </div>
+                <h3 class="text-xl font-bold">FoodDash</h3>
+                <p class="text-sm opacity-80">Delivery de Comida</p>
+              </div>
+            </div>
+            <div class="p-6">
+              <h4 class="text-lg font-semibold text-white mb-2">FoodDash</h4>
+              <p class="text-gray-400 text-sm mb-4">Landing com paleta quente, hero central e foco em restaurantes em destaque. Ritmo rápido.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-orange-500/20 text-orange-400 text-xs rounded">Delivery</span>
+                <span class="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">+300% Pedidos</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-500 text-sm">Entregue em 48h</span>
+                <a href="/exemplos/fooddelivery" class="text-orange-400 hover:text-orange-300 transition-colors">
                   Ver Exemplo →
                 </a>
               </div>

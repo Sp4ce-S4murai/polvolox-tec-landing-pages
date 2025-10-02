@@ -1,0 +1,172 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="FoodDash - Delivery de Comida Rápido">
+  <main class="min-h-screen bg-gradient-to-br from-orange-900 via-red-900 to-rose-900 text-white">
+
+    <!-- Header (quente) -->
+    <header class="fixed top-0 w-full bg-black/20 backdrop-blur-sm border-b border-white/10 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
+              <span class="text-xl">🍔</span>
+            </div>
+            <span class="text-xl font-bold">FoodDash</span>
+          </div>
+          <nav class="hidden md:flex space-x-8">
+            <a href="#restaurantes" class="text-white/80 hover:text-white transition-colors">Restaurantes</a>
+            <a href="#como-funciona" class="text-white/80 hover:text-white transition-colors">Como Funciona</a>
+            <a href="#ofertas" class="text-white/80 hover:text-white transition-colors">Ofertas</a>
+            <a href="#contato" class="text-white/80 hover:text-white transition-colors">Contato</a>
+          </nav>
+          <div class="flex items-center space-x-4">
+            <button class="px-4 py-2 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-lg hover:from-orange-600 hover:to-red-600 transition-all duration-300">
+              Baixe o App
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero (centralizado) -->
+    <section class="relative pt-24 pb-20 overflow-hidden">
+      <div class="absolute inset-0 opacity-30">
+        <div class="absolute -top-10 -left-10 w-72 h-72 bg-orange-500/30 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-red-500/30 rounded-full blur-3xl"></div>
+      </div>
+
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+          Comida Quente,
+          <span class="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">Entrega Relâmpago</span>
+        </h1>
+        <p class="text-xl text-white/80 mb-8">
+          Peça de seus restaurantes favoritos e receba em minutos. Simples, rápido e delicioso.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#" aria-disabled="true" title="Botão ilustrativo de exemplo" class="px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-xl opacity-80 cursor-not-allowed">
+            Pedir Agora (Exemplo)
+          </a>
+          <button class="px-8 py-4 border border-white/20 text-white font-semibold rounded-xl hover:border-white/40 transition-all duration-300">
+            Ver Restaurantes
+          </button>
+        </div>
+        <div class="flex items-center justify-center gap-8 mt-10">
+          <div class="text-center">
+            <div class="text-2xl font-bold text-orange-300">1M+</div>
+            <div class="text-sm text-white/70">Pedidos</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold text-red-300">15min</div>
+            <div class="text-sm text-white/70">Tempo médio</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold text-rose-300">4.9★</div>
+            <div class="text-sm text-white/70">Avaliação</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Restaurantes em destaque (grid primeiro) -->
+    <section id="restaurantes" class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold">Restaurantes em Destaque</h2>
+          <p class="text-white/80">Seleção dos queridinhos da cidade</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white/10 border border-white/10 rounded-2xl p-6">
+            <div class="text-5xl mb-3">🍕</div>
+            <h3 class="font-semibold">La Pizza</h3>
+            <p class="text-sm text-white/70">Italiana • 20min</p>
+          </div>
+          <div class="bg-white/10 border border-white/10 rounded-2xl p-6">
+            <div class="text-5xl mb-3">🍔</div>
+            <h3 class="font-semibold">Burger Hub</h3>
+            <p class="text-sm text-white/70">Americana • 12min</p>
+          </div>
+          <div class="bg-white/10 border border-white/10 rounded-2xl p-6">
+            <div class="text-5xl mb-3">🍣</div>
+            <h3 class="font-semibold">Sushi Garden</h3>
+            <p class="text-sm text-white/70">Japonesa • 18min</p>
+          </div>
+          <div class="bg-white/10 border border-white/10 rounded-2xl p-6">
+            <div class="text-5xl mb-3">🌮</div>
+            <h3 class="font-semibold">Taco Fiesta</h3>
+            <p class="text-sm text-white/70">Mexicana • 15min</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como funciona (depois do grid) -->
+    <section id="como-funciona" class="py-16 bg-black/20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold">Como Funciona</h2>
+          <p class="text-white/80">Passo a passo para matar sua fome</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="rounded-xl border border-white/10 bg-white/5 p-6">
+            <div class="text-3xl mb-2">🔍</div>
+            <h3 class="font-semibold mb-1">1. Encontre</h3>
+            <p class="text-sm text-white/80">Pesquise por culinária, preço e avaliações.</p>
+          </div>
+          <div class="rounded-xl border border-white/10 bg-white/5 p-6">
+            <div class="text-3xl mb-2">🛒</div>
+            <h3 class="font-semibold mb-1">2. Peça</h3>
+            <p class="text-sm text-white/80">Monte seu pedido e finalize em segundos.</p>
+          </div>
+          <div class="rounded-xl border border-white/10 bg-white/5 p-6">
+            <div class="text-3xl mb-2">🏠</div>
+            <h3 class="font-semibold mb-1">3. Receba</h3>
+            <p class="text-sm text-white/80">Acompanhe em tempo real até a porta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ofertas -->
+    <section id="ofertas" class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold">Ofertas do Dia</h2>
+          <p class="text-white/80">Descontos quentes para você economizar</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="rounded-xl bg-white/10 border border-white/10 p-6">
+            <h3 class="font-semibold mb-2">Combo Burger</h3>
+            <p class="text-sm text-white/80">2x hambúrguer + batata + refri</p>
+            <span class="inline-block mt-3 px-2 py-1 bg-green-500/20 text-green-200 rounded text-sm">-20%</span>
+          </div>
+          <div class="rounded-xl bg-white/10 border border-white/10 p-6">
+            <h3 class="font-semibold mb-2">Festival Sushi</h3>
+            <p class="text-sm text-white/80">30 peças selecionadas</p>
+            <span class="inline-block mt-3 px-2 py-1 bg-green-500/20 text-green-200 rounded text-sm">-15%</span>
+          </div>
+          <div class="rounded-xl bg-white/10 border border-white/10 p-6">
+            <h3 class="font-semibold mb-2">Pizza Família</h3>
+            <p class="text-sm text-white/80">2 sabores + borda recheada</p>
+            <span class="inline-block mt-3 px-2 py-1 bg-green-500/20 text-green-200 rounded text-sm">-25%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Contato -->
+    <section id="contato" class="py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl font-bold mb-4">Bateu a fome?</h2>
+        <p class="text-white/80 mb-6">Fale com a gente e conheça planos para restaurantes</p>
+        <a href="#" aria-disabled="true" title="Botão ilustrativo de exemplo" class="inline-flex items-center gap-2 px-6 py-3 bg-orange-600 text-white rounded-lg opacity-80 cursor-not-allowed">
+          <svg class="w-5 h-5" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M19.93 17.08l-2.28 2.28a1 1 0 01-1.1.22 13.71 13.71 0 01-4.97-3.41 13.71 13.71 0 01-3.41-4.97 1 1 0 01.22-1.1l2.28-2.28a1 1 0 011.1-.22 1 1 0 01.67.79 11.28 11.28 0 001.22 3.2 1 1 0 01-.23 1.18l-.72.73a9.87 9.87 0 003.41 3.41l.73-.72a1 1 0 011.18-.23 11.28 11.28 0 003.2 1.22 1 1 0 01.79.67 1 1 0 01-.22 1.1z"/></svg>
+          Falar no WhatsApp (Exemplo)
+        </a>
+      </div>
+    </section>
+
+  </main>
+</Layout>

@@ -1,0 +1,177 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="HealthCare Plus - Clínica e Telemedicina">
+  <main class="min-h-screen bg-white text-gray-900">
+
+    <!-- Header (Claro) -->
+    <header class="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-200 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-teal-500 rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 3a7 7 0 100 14A7 7 0 0010 3zM9 7a1 1 0 012 0v2h2a1 1 0 110 2h-2v2a1 1 0 11-2 0v-2H7a1 1 0 110-2h2V7z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <span class="text-xl font-bold">HealthCare Plus</span>
+          </div>
+          <nav class="hidden md:flex space-x-8">
+            <a href="#servicos" class="text-gray-600 hover:text-gray-900 transition-colors">Serviços</a>
+            <a href="#especialistas" class="text-gray-600 hover:text-gray-900 transition-colors">Especialistas</a>
+            <a href="#sobre" class="text-gray-600 hover:text-gray-900 transition-colors">Sobre</a>
+            <a href="#contato" class="text-gray-600 hover:text-gray-900 transition-colors">Contato</a>
+          </nav>
+          <div class="flex items-center space-x-4">
+            <button class="px-4 py-2 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg hover:from-blue-700 hover:to-teal-700 transition-all duration-300">
+              Área do Paciente
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero (Split com formulário) -->
+    <section class="relative pt-20 pb-16 overflow-hidden bg-gradient-to-br from-blue-50 to-teal-50">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- Texto -->
+          <div class="space-y-6">
+            <span class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+              🩺 Cuidados Humanizados & Telemedicina
+            </span>
+            <h1 class="text-4xl lg:text-5xl font-extrabold leading-tight">
+              Saúde que conecta você aos
+              <span class="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">melhores especialistas</span>
+            </h1>
+            <p class="text-lg text-gray-700">
+              Agende consultas presenciais ou online, receba atendimento rápido e seguro com nossa equipe multidisciplinar.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="#" aria-disabled="true" title="Botão ilustrativo de exemplo" class="px-6 py-3 bg-gradient-to-r from-blue-600 to-teal-600 text-white font-semibold rounded-xl opacity-80 cursor-not-allowed">
+                Agendar via WhatsApp (Exemplo)
+              </a>
+              <button class="px-6 py-3 border border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-gray-400 hover:text-gray-900 transition-all duration-300">
+                Ver Especialidades
+              </button>
+            </div>
+            <div class="flex items-center gap-8 pt-4">
+              <div class="text-center">
+                <div class="text-2xl font-bold text-blue-700">24h</div>
+                <div class="text-sm text-gray-500">Atendimento</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-bold text-teal-700">98%</div>
+                <div class="text-sm text-gray-500">Satisfação</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-bold text-emerald-700">10k+</div>
+                <div class="text-sm text-gray-500">Pacientes</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulário -->
+          <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-200">
+            <h3 class="text-xl font-semibold mb-6">Agende sua consulta</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm text-gray-600 mb-1">Nome</label>
+                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Seu nome" />
+              </div>
+              <div>
+                <label class="block text-sm text-gray-600 mb-1">Especialidade</label>
+                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+                  <option>Clínico Geral</option>
+                  <option>Cardiologia</option>
+                  <option>Pediatria</option>
+                  <option>Dermatologia</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-sm text-gray-600 mb-1">Data</label>
+                <input type="date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+              <div>
+                <label class="block text-sm text-gray-600 mb-1">Formato</label>
+                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+                  <option>Presencial</option>
+                  <option>Telemedicina</option>
+                </select>
+              </div>
+            </div>
+            <button class="mt-6 w-full py-3 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg font-semibold hover:from-blue-700 hover:to-teal-700 transition-all duration-300">
+              Buscar Horários
+            </button>
+            <p class="text-xs text-gray-500 mt-3">Formulário ilustrativo para demonstração.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ordem diferente: Equipe antes de Serviços -->
+    <section id="especialistas" class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-2">Equipe de Especialistas</h2>
+          <p class="text-gray-600">Profissionais qualificados com atendimento humanizado</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+            <div class="w-16 h-16 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center mb-4 text-2xl">🩺</div>
+            <h3 class="font-semibold">Dra. Ana Cardoso</h3>
+            <p class="text-sm text-gray-600">Cardiologista</p>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+            <div class="w-16 h-16 bg-teal-100 text-teal-700 rounded-lg flex items-center justify-center mb-4 text-2xl">👶</div>
+            <h3 class="font-semibold">Dr. Pedro Lima</h3>
+            <p class="text-sm text-gray-600">Pediatra</p>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+            <div class="w-16 h-16 bg-emerald-100 text-emerald-700 rounded-lg flex items-center justify-center mb-4 text-2xl">🧴</div>
+            <h3 class="font-semibold">Dra. Júlia Torres</h3>
+            <p class="text-sm text-gray-600">Dermatologista</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-2">Serviços</h2>
+          <p class="text-gray-600">Consultas, exames e acompanhamento contínuo</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="rounded-xl border border-blue-200 bg-white p-6">
+            <h3 class="font-semibold mb-2">Consultas Presenciais</h3>
+            <p class="text-sm text-gray-600">Atendimento em clínica com infraestrutura moderna.</p>
+          </div>
+          <div class="rounded-xl border border-teal-200 bg-white p-6">
+            <h3 class="font-semibold mb-2">Telemedicina</h3>
+            <p class="text-sm text-gray-600">Consultas online com segurança e praticidade.</p>
+          </div>
+          <div class="rounded-xl border border-emerald-200 bg-white p-6">
+            <h3 class="font-semibold mb-2">Exames</h3>
+            <p class="text-sm text-gray-600">Laboratoriais e imagem com resultados rápidos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Contato -->
+    <section id="contato" class="py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl font-bold mb-4">Pronto para cuidar da sua saúde?</h2>
+        <p class="text-gray-600 mb-6">Entre em contato e descubra como podemos ajudar</p>
+        <a href="#" aria-disabled="true" title="Botão ilustrativo de exemplo" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg opacity-80 cursor-not-allowed">
+          <svg class="w-5 h-5" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M19.93 17.08l-2.28 2.28a1 1 0 01-1.1.22 13.71 13.71 0 01-4.97-3.41 13.71 13.71 0 01-3.41-4.97 1 1 0 01.22-1.1l2.28-2.28a1 1 0 011.1-.22 1 1 0 01.67.79 11.28 11.28 0 001.22 3.2 1 1 0 01-.23 1.18l-.72.73a9.87 9.87 0 003.41 3.41l.73-.72a1 1 0 011.18-.23 11.28 11.28 0 003.2 1.22 1 1 0 01.79.67 1 1 0 01-.22 1.1z"/></svg>
+          Falar no WhatsApp (Exemplo)
+        </a>
+      </div>
+    </section>
+
+  </main>
+</Layout>
